@@ -12,7 +12,6 @@ html {
   position: relative;
   background: var(--white);
   min-width: 375px;
-
 }
 
 /** Textos */
@@ -35,6 +34,11 @@ html {
 
 .text-primary {
   color: var(--primary);
+}
+
+iconify-icon {
+  font-size: 24px;
+  line-height: 24px;
 }
 
 /** Espaciados */
@@ -73,12 +77,7 @@ html {
   color: var(--black);
 }
 
-iconify-icon {
-  font-size: 24px;
-}
-
 /** Header y menu */
-
 header {
   background: var(--white);
   display: flex;
@@ -110,6 +109,7 @@ header {
       align-items: center;
       transition: all 0.3s ease;
       border-bottom: 2px solid transparent;
+      font-weight: 600;
     }
 
     & li:hover {
@@ -118,15 +118,13 @@ header {
   }
 }
 
-/** Parte principal */
-
+/** Inicio */
 #start {
   background-image: url(../images/title-bg-sm.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   position: relative;
-  
 
   & > .p-section {
     padding-top: 48px;
@@ -156,7 +154,6 @@ header {
       & p {
         font-weight: 500;
       }
-
     }
 
     & .separator-container {
@@ -226,4 +223,77 @@ header {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+/** Sobre nosotros */
+
+#about {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  & h2 {
+    text-align: center;
+  }
+
+  & > div {
+    display: grid;
+    align-items: center;
+    margin-top: 32px;
+    gap: 32px;
+
+    & .img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      & img {
+        width: 160px;
+        height: 160px;
+        margin: auto;
+      }
+
+      & p {
+        text-align: center;
+        width: 300px;
+      }
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      & li {
+        display: flex;
+        gap: 16px;
+
+        & .icon-container {
+          background: var(--black);
+          color: var(--primary);
+          border-radius: 50%;
+          transition: all 0.3s ease;
+          align-self: flex-start;
+          width: 36px;
+          height: 36px;
+          padding: 6px;
+        }
+
+        & h3 {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 20px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+      }
+
+      & li:hover {
+        & .icon-container {
+          background: var(--primary);
+          color: var(--black);
+        }
+      }
+    }
+  }
 }

@@ -45,10 +45,16 @@
       max-width: 400px;
     }
   }
+
 }
 
 /*? lg */
 @media (min-width: 1024px) {
+  .title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
   .p-section {
     padding-left: 32px;
     padding-right: 32px;
@@ -71,6 +77,26 @@
     }
     
     
+  }
+
+  #about > div {
+
+    margin-top: 48px;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    & .img-container {
+      align-self: flex-start;
+    }
+    & img {
+      width: 320px;
+      height: 320px;
+      animation: pulse 5s infinite;
+    }
+
+    & ul {
+      grid-column: span 2 / span 2;
+    }
   }
 }
 
