@@ -4,8 +4,9 @@
 
 /*? md */
 @media (min-width: 768px) {
-  .main-container {
-    padding: 24px;
+  .p-section {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   header {
@@ -13,12 +14,63 @@
       display: block;
     }
   }
+
+  #start .p-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+
+    & .title-container {
+      gap: 32px;
+      grid-column: span 2 / span 2;
+
+      & h1 {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 48px;
+      }
+
+      & p {
+        font-size: 20px;
+        width: 420px;
+      }
+    }
+
+    & .separator-container {
+      display: none;
+    }
+
+    & .dish-container {
+      grid-column: span 1 / span 1;
+      max-width: 400px;
+    }
+  }
 }
 
 /*? lg */
 @media (min-width: 1024px) {
-  .main-container {
-    padding: 32px;
+  .p-section {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  #start {
+
+    & .title-container {
+
+      & h1 {
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px;
+      }
+
+      & p {
+        font-size: 24px;
+        width: 500px;
+      }
+    }
+    
+    
   }
 }
 

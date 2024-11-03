@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante Yuli</title>
-    <link rel="stylesheet" href="styles/main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header>
+    <header class="p-section">
       <img src="./images/yuli-logo.png" alt="Logo de yuli" />
       <nav>
         <ul>
@@ -24,5 +24,43 @@
         <a href="#reservation">Iniciar sesión</a>
       </button>
     </header>
+    <section id="start" class="">
+      <div class="p-section">
+        <div class="title-container">
+          <h1>
+            Bienvenidos a <br />
+            Restaurante Yuli
+          </h1>
+          <p>
+            Un rincón para disfrutar comida de calidad en la terminal de
+            transportes de Cúcuta
+          </p>
+          <div>
+            <button class="btn btn-primary">Explora nuestro menú</button>
+          </div>
+        </div>
+        <div class="separator-container">
+          <iconify-icon icon="fluent:food-grains-20-regular"></iconify-icon>
+          <iconify-icon icon="ion:restaurant-outline"></iconify-icon>
+          <iconify-icon icon="fluent:food-grains-20-regular"></iconify-icon>
+        </div>
+        <div>
+          <div class="dish-container">
+            <div>
+              <div class="dish-name">
+                <h3>Bandeja Paisa</h3>
+                <span>$ 18.000</span>
+              </div>
+              <div class="img-container">
+                <img src="./images/bandeja-paisa.jpg" alt="" />
+                <div class="day-dish">
+                  <div>Plato del día</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
