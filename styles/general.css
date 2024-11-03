@@ -1,0 +1,106 @@
+html {
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+
+  color: var(--black);
+
+  min-height: 100dvh;
+
+  min-width: 375px;
+  max-width: 1900px;
+  margin: auto;
+
+  position: relative;
+}
+
+/** Textos */
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/** Botones */
+
+.btn {
+  text-align: center;
+  height: 32px;
+  border-radius: var(--round);
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  padding: 0 16px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn.btn-black {
+  background: var(--black);
+  color: white;
+}
+
+.btn.btn-primary {
+  background: var(--primary);
+  color: var(--black);
+}
+
+iconify-icon {
+  font-size: 24px;
+}
+
+
+/** Header y menu */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  & img {
+    width: 48px;
+    aspect-ratio: 1 / 1;
+  }
+
+  & nav {
+    display: none;
+
+    & ul {
+      display: flex;
+      gap: 8px;
+    }
+
+    & li {
+      height: 32px;
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      border-bottom: 2px solid transparent;
+    }
+
+    & li:hover {
+      border-bottom: 2px solid var(--primary);
+    }
+   
+  }
+}
+

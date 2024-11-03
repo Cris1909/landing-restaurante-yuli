@@ -1,0 +1,27 @@
+/*? sm */
+@media (min-width: 640px) {
+}
+
+/*? md */
+@media (min-width: 768px) {
+  .main-container {
+    padding: 24px;
+  }
+
+  header {
+    & nav {
+      display: block;
+    }
+  }
+}
+
+/*? lg */
+@media (min-width: 1024px) {
+  .main-container {
+    padding: 32px;
+  }
+}
+
+/*? xl */
+@media (min-width: 1280px) {
+}
