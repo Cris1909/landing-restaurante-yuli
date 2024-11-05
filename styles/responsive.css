@@ -1,7 +1,3 @@
-/*? sm */
-@media (min-width: 640px) {
-}
-
 /*? md */
 @media (min-width: 768px) {
   .p-section {
@@ -145,12 +141,5 @@
         flex: 1;
       }
     }
-  }
-}
-
-/*? xl */
-@media (min-width: 1280px) {
-  .dish-grid {
-    display: grid;
   }
 }
